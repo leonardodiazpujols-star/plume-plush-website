@@ -27,17 +27,6 @@ export default function Home() {
         }}
       >
         <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute top-20 left-0 right-0 flex justify-center gap-10 z-10 pt-4">
-          {["Home", "Our Story", "Collections", "Artisans"].map((item) => (
-            <span
-              key={item}
-              className="text-[0.6rem] tracking-[0.25em] uppercase text-white/70 hover:text-[oklch(0.72_0.09_75)] cursor-pointer transition-colors"
-              style={{ fontFamily: "'Jost', sans-serif" }}
-            >
-              {item}
-            </span>
-          ))}
-        </div>
         <div className="relative z-10 flex flex-col items-center gap-6 px-6">
           <img src="/images/pp_monogram_transparent.png" alt="P&P" className="h-24 w-24 object-contain mb-2" />
           <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[oklch(0.72_0.09_75)]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
