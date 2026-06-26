@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="md:col-span-1 flex flex-col items-start gap-4">
           <img
-            src="/manus-storage/pp_monogram_transparent_6c7d38b2.png"
+            src="/images/pp_monogram_transparent.png"
             alt="P&P"
             className="h-16 w-16 object-contain"
           />

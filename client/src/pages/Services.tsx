@@ -30,7 +30,7 @@ const services = [
     id: "live-sketching",
     eyebrow: "Live at Your Event",
     title: "Live Portrait Sketching",
-    img: "/manus-storage/web_live_sketching_cbfd390b.png",
+    img: "/images/web_live_sketching.png",
     description:
       "Our master portrait artists create bespoke sketches live at your event — transforming each guest into a timeless work of art. From intimate weddings to grand brand activations, our artists work in pencil, charcoal, watercolour, and ink.",
     features: [
@@ -46,7 +46,7 @@ const services = [
     id: "engraving",
     eyebrow: "Precision Artistry",
     title: "Luxury Engraving",
-    img: "/manus-storage/web_engraving_0a70f30b.png",
+    img: "/images/web_engraving.png",
     description:
       "Precision engraving on glass, crystal, metal, leather, and stone. Each mark is a permanent testament to heritage and prestige. We engrave monograms, crests, signatures, and bespoke motifs for brands and private clients alike.",
     features: [
@@ -62,7 +62,7 @@ const services = [
     id: "calligraphy",
     eyebrow: "The Written Word",
     title: "Calligraphy & Lettering",
-    img: "/manus-storage/web_calligraphy_1816ffc7.png",
+    img: "/images/web_calligraphy.png",
     description:
       "Hand-lettered invitations, menus, place cards, and bespoke brand typography. Our calligraphers master traditional and contemporary scripts — from classic Copperplate to modern brush lettering — for the most discerning clients.",
     features: [
@@ -78,7 +78,7 @@ const services = [
     id: "embroidery",
     eyebrow: "Thread & Needle",
     title: "Embroidery & Monogramming",
-    img: "/manus-storage/web_embroidery_be146881.png",
+    img: "/images/web_embroidery.png",
     description:
       "Artisanal embroidery on garments, accessories, and luxury home textiles. From hand-stitched monograms on bespoke shirts to elaborate crests on ceremonial robes, our embroiderers bring centuries of craft to every commission.",
     features: [
@@ -94,7 +94,7 @@ const services = [
     id: "gilding",
     eyebrow: "23-Carat Artistry",
     title: "Gold Gilding",
-    img: "/manus-storage/web_gold_gilding_912850ed.png",
+    img: "/images/web_gold_gilding.png",
     description:
       "23-carat gold leaf application on frames, furniture, ceramics, and bespoke objects. Our gilders use traditional water gilding and oil gilding techniques to create surfaces of extraordinary luminosity and permanence.",
     features: [
@@ -110,7 +110,7 @@ const services = [
     id: "activations",
     eyebrow: "Immersive Experiences",
     title: "Brand Activations",
-    img: "/manus-storage/web_luxury_event_6dbb8ced.png",
+    img: "/images/web_luxury_event.png",
     description:
       "Immersive luxury experiences for fashion houses, five-star hotels, and prestige brands worldwide. We design and deliver bespoke artisan stations that create unforgettable moments and deepen brand connection with discerning audiences.",
     features: [
@@ -137,7 +137,7 @@ export default function Services() {
       <section
         className="relative min-h-[60vh] flex flex-col items-center justify-center text-center overflow-hidden pt-20"
         style={{
-          backgroundImage: "url('/manus-storage/bg_charcoal_marble_hero_d6250ff3.png')",
+          backgroundImage: "url('/images/bg_charcoal_marble_hero.png')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
         }}
@@ -235,7 +235,7 @@ export default function Services() {
       <section
         className="relative py-24"
         style={{
-          backgroundImage: "url('/manus-storage/pink_marble_bg_wide_8da0cffe.png')",
+          backgroundImage: "url('/images/pink_marble_bg_wide.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -301,7 +301,7 @@ export default function Services() {
           </div>
 
           <img
-            src="/manus-storage/web_global_map_f091a13c.png"
+            src="/images/web_global_map.png"
             alt="Global presence map"
             className="w-full max-w-4xl mx-auto h-64 object-cover mb-14 fade-up"
           />

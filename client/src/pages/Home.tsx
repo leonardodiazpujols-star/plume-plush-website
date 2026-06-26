@@ -40,7 +40,7 @@ export default function Home() {
       <section
         className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden"
         style={{
-          backgroundImage: "url('/manus-storage/bg_charcoal_marble_hero_d6250ff3.png')",
+          backgroundImage: "url('/images/bg_charcoal_marble_hero.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -65,7 +65,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center gap-6 px-6">
           {/* Logo */}
           <img
-            src="/manus-storage/pp_monogram_transparent_6c7d38b2.png"
+            src="/images/pp_monogram_transparent.png"
             alt="P&P"
             className="h-24 w-24 object-contain mb-2"
           />
@@ -124,12 +124,12 @@ export default function Home() {
             <p className="eyebrow mb-4">Masters of Our Craft</p>
             <div className="grid grid-cols-2 gap-2 mb-6">
               <img
-                src="/manus-storage/web_live_sketching_cbfd390b.png"
+                src="/images/web_live_sketching.png"
                 alt="Live Sketching"
                 className="w-full h-40 object-cover"
               />
               <img
-                src="/manus-storage/web_calligraphy_1816ffc7.png"
+                src="/images/web_calligraphy.png"
                 alt="Calligraphy"
                 className="w-full h-40 object-cover"
               />
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="px-8 py-4 fade-up" style={{ transitionDelay: "100ms" }}>
             <p className="eyebrow mb-4">Engraved with Distinction</p>
             <img
-              src="/manus-storage/web_engraving_0a70f30b.png"
+              src="/images/web_engraving.png"
               alt="Engraving"
               className="w-full h-52 object-cover mb-6"
             />
@@ -174,7 +174,7 @@ export default function Home() {
           <div className="px-8 py-4 fade-up" style={{ transitionDelay: "200ms" }}>
             <p className="eyebrow mb-4">Global DNA</p>
             <img
-              src="/manus-storage/web_global_map_f091a13c.png"
+              src="/images/web_global_map.png"
               alt="Global Presence"
               className="w-full h-52 object-cover mb-6"
             />
@@ -227,7 +227,7 @@ export default function Home() {
       <section
         className="relative py-24 overflow-hidden"
         style={{
-          backgroundImage: "url('/manus-storage/pink_marble_bg_wide_8da0cffe.png')",
+          backgroundImage: "url('/images/pink_marble_bg_wide.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -257,7 +257,7 @@ export default function Home() {
             </div>
             <div className="relative fade-up" style={{ transitionDelay: "150ms" }}>
               <img
-                src="/manus-storage/plume_plush_instagram_post_3780cb63.jpg"
+                src="/images/plume_plush_instagram_post.jpg"
                 alt="Live engraving at event"
                 className="w-full h-[500px] object-cover shadow-2xl"
               />
@@ -305,32 +305,32 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                img: "/manus-storage/web_live_sketching_cbfd390b.png",
+                img: "/images/web_live_sketching.png",
                 title: "Live Portrait Sketching",
                 desc: "Bespoke portraits created live at your event — weddings, galas, brand activations.",
               },
               {
-                img: "/manus-storage/web_engraving_0a70f30b.png",
+                img: "/images/web_engraving.png",
                 title: "Luxury Engraving",
                 desc: "Precision engraving on glass, metal, leather, and stone for brands and individuals.",
               },
               {
-                img: "/manus-storage/web_calligraphy_1816ffc7.png",
+                img: "/images/web_calligraphy.png",
                 title: "Calligraphy & Lettering",
                 desc: "Hand-lettered invitations, menus, place cards, and bespoke brand typography.",
               },
               {
-                img: "/manus-storage/web_embroidery_be146881.png",
+                img: "/images/web_embroidery.png",
                 title: "Embroidery & Monogramming",
                 desc: "Artisanal embroidery on garments, accessories, and luxury home textiles.",
               },
               {
-                img: "/manus-storage/web_gold_gilding.png",
+                img: "/images/web_gold_gilding.png",
                 title: "Gold Gilding",
                 desc: "23-carat gold leaf application on frames, furniture, ceramics, and bespoke objects.",
               },
               {
-                img: "/manus-storage/web_luxury_event_6dbb8ced.png",
+                img: "/images/web_luxury_event.png",
                 title: "Brand Activations",
                 desc: "Immersive luxury experiences for fashion houses, hotels, and prestige brands worldwide.",
               },
@@ -413,12 +413,12 @@ export default function Home() {
             </div>
             <div className="fade-up" style={{ transitionDelay: "150ms" }}>
               <img
-                src="/manus-storage/web_london_dubai_f343859f.png"
+                src="/images/web_london_dubai.png"
                 alt="London and Dubai"
                 className="w-full h-[420px] object-cover shadow-xl"
               />
               <img
-                src="/manus-storage/web_global_map_f091a13c.png"
+                src="/images/web_global_map.png"
                 alt="Global map"
                 className="w-full h-48 object-cover mt-4 shadow-md"
               />
@@ -433,7 +433,7 @@ export default function Home() {
       <section
         className="relative py-24 overflow-hidden"
         style={{
-          backgroundImage: "url('/manus-storage/business_card_bg_texture_f2801321.png')",
+          backgroundImage: "url('/images/business_card_bg_texture.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

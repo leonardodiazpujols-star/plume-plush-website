@@ -38,7 +38,7 @@ export default function Navigation() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/manus-storage/pp_monogram_transparent_6c7d38b2.png"
+            src="/images/pp_monogram_transparent.png"
             alt="P&P Monogram"
             className="h-12 w-12 object-contain"
           />
