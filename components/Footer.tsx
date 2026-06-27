@@ -23,7 +23,7 @@ export default function Footer() {
               { label: "About Us", href: "/about" },
               { label: "Services", href: "/services" },
               { label: "Events", href: "#events" },
-              { label: "Contact", href: "#contact" },
+              { label: "Contact", href: "/contact" },
             ].map((item) => (
               <li key={item.label}>
                 <Link href={item.href} className="text-[0.75rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
