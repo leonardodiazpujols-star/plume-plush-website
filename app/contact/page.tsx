@@ -129,11 +129,11 @@ export default function Contact() {
       </section>
 
       {/* ── GLOBAL MAP — Full Screen ── */}
-      <section className="w-full h-screen relative overflow-hidden">
+      <section className="w-full bg-[#0d0d0d] md:h-screen md:overflow-hidden">
         <img
           src="/images/web_global_map.png"
           alt="Plume & Plush global presence — London, Paris, Milan, Dubai, New York"
-          className="w-full h-full object-cover"
+          className="w-full h-auto md:h-full md:object-cover md:object-center"
         />
       </section>
 
