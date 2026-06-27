@@ -107,13 +107,15 @@ export default function Home() {
       <section className="bg-[oklch(0.93_0.008_80)] py-16 border-y border-[oklch(0.88_0.01_75)]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 md:grid-cols-4 divide-x divide-[oklch(0.88_0.01_75)]">
           {[
-            { icon: "♛", title: "Exceptional Quality", desc: "The finest materials. Meticulous craftsmanship." },
-            { icon: "◈", title: "Timeless Elegance", desc: "Designs that transcend seasons and trends." },
-            { icon: "✦", title: "Bespoke Experience", desc: "Personalized service. Exclusively yours." },
-            { icon: "⚿", title: "Legacy of Trust", desc: "Built on integrity. Cherished for generations." },
+            { icon: "/images/icon_exceptional_quality.png", title: "Exceptional Quality", desc: "The finest materials. Meticulous craftsmanship." },
+            { icon: "/images/icon_timeless_elegance.png",   title: "Timeless Elegance",   desc: "Designs that transcend seasons and trends." },
+            { icon: "/images/icon_bespoke_experience.png",  title: "Bespoke Experience",  desc: "Personalized service. Exclusively yours." },
+            { icon: "/images/icon_legacy_of_trust.png",     title: "Legacy of Trust",     desc: "Built on integrity. Cherished for generations." },
           ].map((v, i) => (
             <div key={v.title} className="px-8 py-8 text-center fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
-              <div className="text-2xl text-[oklch(0.72_0.09_75)] mb-4">{v.icon}</div>
+              <div className="flex justify-center mb-4">
+                <img src={v.icon} alt={v.title} className="h-16 w-16 object-contain" />
+              </div>
               <h3 className="text-[0.65rem] tracking-[0.2em] uppercase text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
                 {v.title}
               </h3>
