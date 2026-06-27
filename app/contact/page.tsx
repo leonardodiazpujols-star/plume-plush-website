@@ -128,6 +128,15 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* ── GLOBAL MAP — Full Screen ── */}
+      <section className="w-full h-screen relative overflow-hidden">
+        <img
+          src="/images/web_global_map.png"
+          alt="Plume & Plush global presence — London, Paris, Milan, Dubai, New York"
+          className="w-full h-full object-cover"
+        />
+      </section>
+
       {/* ── OFFICES — Dark Charcoal ── */}
       <section className="bg-[oklch(0.12_0.005_285)] py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
