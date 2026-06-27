@@ -112,58 +112,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ── BRAND STATEMENT — Pink Marble ── */}
-      <section
-        className="relative py-24 overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/pink_marble_bg_wide.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-white/35" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="fade-up">
-              <p className="eyebrow mb-4">Our Promise</p>
-              <h2
-                className="text-4xl md:text-5xl text-[oklch(0.14_0.005_285)] mb-6 leading-tight"
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
-              >
-                Luxurious Accents<br />for Any Occasion
-              </h2>
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-px bg-[oklch(0.72_0.09_75)]" />
-                <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
-              </div>
-              <div className="flex flex-col gap-4">
-                {[
-                  "Elevate your event with our artisanal craftsmanship and personalised touches.",
-                  "Each piece is meticulously crafted with attention to detail, whether it's intricate engraving, delicate calligraphy, or stunning origami.",
-                  "Our goal is to add a touch of elegance and uniqueness to your special occasion, making it truly unforgettable.",
-                  "From live sketching to gold gilding, let us bring your vision to life with our artisanal expertise.",
-                ].map((text, i) => (
-                  <p
-                    key={i}
-                    className="text-[0.88rem] text-[oklch(0.3_0.01_285)] leading-relaxed"
-                    style={{ fontWeight: 300 }}
-                  >
-                    {text}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="fade-up" style={{ transitionDelay: "150ms" }}>
-              <img
-                src="/images/web_live_sketching.png"
-                alt="Live sketching at event"
-                className="w-full h-[500px] object-cover shadow-2xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── COVERAGE ── */}
       <section className="bg-[oklch(0.93_0.008_80)] py-16 border-y border-[oklch(0.88_0.01_75)]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center fade-up">
