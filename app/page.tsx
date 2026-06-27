@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimationsInit } from "@/components/AnimationsInit";
+import BrandMarquee from "@/components/BrandMarquee";
 
 export const metadata: Metadata = {
   title: "Plume & Plush — Where Artistry Meets Prestige",
@@ -51,6 +52,8 @@ export default function Home() {
           <div className="w-px h-12 bg-gradient-to-b from-[oklch(0.72_0.09_75)] to-transparent" />
         </div>
       </section>
+
+      <BrandMarquee />
 
       {/* EDITORIAL 3-COL */}
       <section className="bg-[oklch(0.96_0.01_80)] py-20">
