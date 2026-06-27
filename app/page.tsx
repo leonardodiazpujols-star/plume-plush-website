@@ -113,8 +113,8 @@ export default function Home() {
             { icon: "/images/icon_legacy_of_trust.png",     title: "Legacy of Trust",     desc: "Built on integrity. Cherished for generations." },
           ].map((v, i) => (
             <div key={v.title} className="px-8 py-8 text-center fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
-              <div className="flex justify-center mb-4">
-                <img src={v.icon} alt={v.title} className="h-16 w-16 object-contain" />
+              <div className="flex justify-center mb-5">
+                <img src={v.icon} alt={v.title} className="h-24 w-auto object-contain" />
               </div>
               <h3 className="text-[0.65rem] tracking-[0.2em] uppercase text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
                 {v.title}
