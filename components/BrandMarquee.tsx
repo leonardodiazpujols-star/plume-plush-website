@@ -23,8 +23,8 @@ export default function BrandMarquee() {
   const track = [...brands, ...brands];
 
   return (
-    <section className="bg-[oklch(0.96_0.01_80)] border-b border-[oklch(0.88_0.01_75)] py-10 overflow-hidden">
-      <p className="text-center text-[0.55rem] tracking-[0.35em] uppercase text-[oklch(0.72_0.09_75)] mb-7" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
+    <section className="bg-[oklch(0.14_0.005_285)] border-y border-white/10 py-12 overflow-hidden">
+      <p className="text-center text-[0.55rem] tracking-[0.35em] uppercase text-[oklch(0.72_0.09_75)] mb-8" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
         Trusted by the World's Most Prestigious Houses
       </p>
       <div className="relative">
@@ -37,16 +37,16 @@ export default function BrandMarquee() {
         >
           {track.map((brand, i) => (
             <div key={i} className="flex items-center gap-16 shrink-0">
-              {/* Fixed-height container forces every logo to the same visual size */}
               <div className="h-7 flex items-center">
                 <img
                   src={brand.src}
                   alt={brand.name}
-                  className="h-full w-auto object-contain opacity-40 grayscale hover:opacity-70 hover:grayscale-0 transition-all duration-500 cursor-default"
+                  className="h-full w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-500 cursor-default"
+                  style={{ filter: "brightness(0) invert(1)" }}
                   draggable={false}
                 />
               </div>
-              <span className="text-[oklch(0.72_0.09_75)] text-[0.4rem] opacity-50">✦</span>
+              <span className="text-[oklch(0.72_0.09_75)] text-[0.4rem] opacity-40">✦</span>
             </div>
           ))}
         </div>
