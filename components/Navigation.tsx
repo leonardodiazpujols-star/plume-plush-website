@@ -30,11 +30,8 @@ export default function Navigation() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-3">
-          <img src="/images/pp_monogram_transparent.png" alt="P&P Monogram" className="h-12 w-12 object-contain" />
-          <span className="hidden sm:block font-display text-sm tracking-[0.25em] uppercase text-white/90" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
-            Plume &amp; Plush
-          </span>
+        <Link href="/" className="flex items-center">
+          <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-16 w-auto object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
