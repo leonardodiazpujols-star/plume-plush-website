@@ -125,6 +125,88 @@ export default function Home() {
         </div>
       </section>
 
+      {/* P&P ARTISTIC STANDARD */}
+      <section className="bg-[oklch(0.08_0.004_285)] py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+
+          {/* Header */}
+          <div className="mb-16 fade-up">
+            <div className="flex items-center gap-5 mb-8">
+              <div className="w-10 h-px bg-[oklch(0.72_0.09_75)]" />
+              <p className="eyebrow">Our Standard</p>
+            </div>
+            <h2
+              className="text-5xl md:text-7xl text-white mb-8 leading-tight"
+              style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
+            >
+              The P&amp;P Artistic Standard
+            </h2>
+            <p
+              className="text-[0.65rem] tracking-[0.25em] uppercase text-[oklch(0.72_0.09_75)] mb-7"
+              style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
+            >
+              We do not just find artists — we curate mastery.
+            </p>
+            <p
+              className="text-[0.85rem] text-white/45 max-w-2xl leading-relaxed"
+              style={{ fontWeight: 300 }}
+            >
+              Plume &amp; Plush transcends the term "artisan" by working exclusively with highly
+              qualified masters of their craft, selected to deliver experiences that meet the
+              exacting demands of the world's most prestigious houses.
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                icon: "/images/icon_exceptional_quality.png",
+                title: "Exceptional Quality",
+                desc: "The finest materials. Meticulous craftsmanship that stands the test of time.",
+              },
+              {
+                icon: "/images/icon_timeless_elegance.png",
+                title: "Timeless Elegance",
+                desc: "Designs that transcend seasons and trends, rooted in enduring beauty.",
+              },
+              {
+                icon: "/images/icon_bespoke_experience.png",
+                title: "Bespoke Experience",
+                desc: "Personalized service tailored exclusively to you and your vision.",
+              },
+              {
+                icon: "/images/icon_legacy_of_trust.png",
+                title: "Legacy of Trust",
+                desc: "Built on integrity. Cherished for generations.",
+              },
+            ].map((item, i) => (
+              <div
+                key={item.title}
+                className="border border-white/10 p-8 hover:border-[oklch(0.72_0.09_75)]/50 transition-colors duration-300 fade-up"
+                style={{ transitionDelay: `${i * 100}ms` }}
+              >
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="h-16 w-auto object-contain mb-8"
+                />
+                <h3
+                  className="text-xl text-white mb-4 leading-snug"
+                  style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 500 }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-[0.8rem] text-white/45 leading-relaxed" style={{ fontWeight: 300 }}>
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* LIVE SKETCHING FEATURE */}
       <section
         className="relative py-24 overflow-hidden"
