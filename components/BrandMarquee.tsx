@@ -23,7 +23,7 @@ export default function BrandMarquee() {
   const track = [...brands, ...brands];
 
   return (
-    <section className="bg-[oklch(0.14_0.005_285)] border-y border-white/10 py-12 overflow-hidden">
+    <section className="py-12 overflow-hidden" style={{ background: "oklch(0.14 0.005 285)", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <p className="text-center text-[0.55rem] tracking-[0.35em] uppercase text-[oklch(0.72_0.09_75)] mb-8" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
         Trusted by the World's Most Prestigious Houses
       </p>
