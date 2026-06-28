@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Star, Shield, Globe } from "lucide-react";
+import { ArrowRight, Star, Shield, Globe, Camera } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimationsInit } from "@/components/AnimationsInit";
@@ -323,6 +323,69 @@ export default function Home() {
               <img src="/images/web_global_map.png" alt="Global map" className="w-full h-48 object-cover mt-4 shadow-md" />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* WORLD OF PLUME & PLUSH */}
+      <section className="bg-[oklch(0.08_0.004_285)] py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+
+          {/* Header */}
+          <div className="mb-16 fade-up">
+            <div className="flex items-center gap-5 mb-8">
+              <div className="w-10 h-px bg-[oklch(0.72_0.09_75)]" />
+              <p className="eyebrow">Around the World</p>
+            </div>
+            <h2
+              className="text-5xl md:text-7xl text-white mb-8 leading-tight"
+              style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
+            >
+              The World of Plume &amp; Plush
+            </h2>
+            <p className="text-[0.85rem] text-white/45 max-w-2xl leading-relaxed" style={{ fontWeight: 300 }}>
+              Artistry Without Borders. From private salons in Paris to grand galas in Dubai,
+              our live activations grace the world's most prestigious stages.
+            </p>
+          </div>
+
+          {/* 3×2 photo grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { event: "Riyadh Season",      location: "Saudi Arabia" },
+              { event: "Paris Fashion Week", location: "France"       },
+              { event: "Art Basel",          location: "Miami"        },
+              { event: "Dubai Expo",         location: "UAE"          },
+              { event: "Venice Biennale",    location: "Italy"        },
+              { event: "Singapore F1 Gala",  location: "Singapore"   },
+            ].map((item, i) => (
+              <div key={item.event} className="fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
+                {/* Placeholder card */}
+                <div className="relative bg-[oklch(0.11_0.004_285)] aspect-[4/3] flex flex-col items-center justify-center border border-white/8">
+                  {/* Corner brackets */}
+                  <span className="absolute top-3 left-3 w-5 h-5 border-t border-l border-white/25" />
+                  <span className="absolute bottom-3 right-3 w-5 h-5 border-b border-r border-white/25" />
+                  {/* Camera icon */}
+                  <Camera size={26} strokeWidth={1} className="text-white/25 mb-3" />
+                  <p className="text-[0.55rem] tracking-[0.25em] uppercase text-white/20" style={{ fontFamily: "'Jost', sans-serif" }}>
+                    Insert Photo
+                  </p>
+                </div>
+                {/* Caption */}
+                <div className="mt-4 text-center">
+                  <p
+                    className="text-base text-white mb-1"
+                    style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}
+                  >
+                    {item.event}
+                  </p>
+                  <p className="text-[0.6rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
+                    {item.location}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
