@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Star, Shield, Globe } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimationsInit } from "@/components/AnimationsInit";
@@ -158,42 +158,37 @@ export default function Home() {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               {
-                icon: "/images/icon_exceptional_quality.png",
-                title: "Exceptional Quality",
-                desc: "The finest materials. Meticulous craftsmanship that stands the test of time.",
+                Icon: Star,
+                title: "Masters of Their Craft",
+                desc: "Every artist in our network holds a minimum of 10 years' professional experience in their discipline, with credentials verified through direct assessment by our artistic directors.",
               },
               {
-                icon: "/images/icon_timeless_elegance.png",
-                title: "Timeless Elegance",
-                desc: "Designs that transcend seasons and trends, rooted in enduring beauty.",
+                Icon: Shield,
+                title: "Brand-Aligned Execution",
+                desc: "We conduct rigorous brand alignment sessions before every activation, ensuring each artisan fully understands and embodies the aesthetic language of the commissioning maison.",
               },
               {
-                icon: "/images/icon_bespoke_experience.png",
-                title: "Bespoke Experience",
-                desc: "Personalized service tailored exclusively to you and your vision.",
-              },
-              {
-                icon: "/images/icon_legacy_of_trust.png",
-                title: "Legacy of Trust",
-                desc: "Built on integrity. Cherished for generations.",
+                Icon: Globe,
+                title: "Global Cultural Fluency",
+                desc: "Our artisans are selected not only for technical mastery but for their deep cultural literacy — enabling authentic, resonant experiences across Arabic, European, and Asian luxury markets.",
               },
             ].map((item, i) => (
               <div
                 key={item.title}
-                className="border border-white/10 p-8 hover:border-[oklch(0.72_0.09_75)]/50 transition-colors duration-300 fade-up"
+                className="border border-white/10 bg-white/[0.03] p-10 hover:border-[oklch(0.72_0.09_75)]/40 transition-colors duration-300 fade-up"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="h-16 w-auto object-contain mb-8"
+                <item.Icon
+                  size={28}
+                  strokeWidth={1.25}
+                  className="text-[oklch(0.72_0.09_75)] mb-8"
                 />
                 <h3
-                  className="text-xl text-white mb-4 leading-snug"
-                  style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 500 }}
+                  className="text-xl text-white mb-5 leading-snug"
+                  style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
                 >
                   {item.title}
                 </h3>
