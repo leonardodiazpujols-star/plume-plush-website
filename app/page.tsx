@@ -19,14 +19,16 @@ export default function Home() {
       <Navigation />
 
       {/* HERO */}
-      <section
-        className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/bg_charcoal_marble_hero.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+        {/* Animated Ken Burns background */}
+        <div
+          className="absolute inset-0 hero-bg"
+          style={{
+            backgroundImage: "url('/images/bg_charcoal_marble_hero.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 flex flex-col items-center gap-6 px-6">
           <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-36 w-auto object-contain mb-2" />

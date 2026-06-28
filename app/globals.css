@@ -226,3 +226,15 @@
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
+
+@keyframes heroBgZoom {
+  0%   { transform: scale(1)    translate(0%,    0%);    }
+  33%  { transform: scale(1.07) translate(-1%,   0.4%);  }
+  66%  { transform: scale(1.05) translate(0.8%, -0.5%);  }
+  100% { transform: scale(1)    translate(0%,    0%);    }
+}
+
+.hero-bg {
+  will-change: transform;
+  animation: heroBgZoom 28s ease-in-out infinite;
+}
