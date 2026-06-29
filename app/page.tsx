@@ -31,7 +31,6 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 flex flex-col items-center gap-6 px-6">
-          <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-36 w-auto object-contain mb-2" />
           <h1 className="text-5xl md:text-7xl lg:text-8xl text-white leading-none" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
             Where Artistry<br />Meets Prestige
           </h1>
