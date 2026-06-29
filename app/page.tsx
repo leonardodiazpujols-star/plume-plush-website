@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className="px-8 py-4 fade-up" style={{ transitionDelay: "100ms" }}>
             <p className="eyebrow mb-4">Engraved with Distinction</p>
-            <img src="/images/details-that-define-legacy.jpg" alt="Engraving" className="w-full h-72 object-contain mb-6 bg-[#6b0a0a]" />
+            <img src="/images/details-that-define-legacy.jpg" alt="Engraving" className="w-full h-auto mb-6" />
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Details That<br />Define Legacy
             </h2>
