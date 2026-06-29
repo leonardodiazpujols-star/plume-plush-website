@@ -58,9 +58,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-0 divide-x divide-[oklch(0.88_0.01_75)]">
           <div className="px-8 py-4 fade-up">
             <p className="eyebrow mb-4">Masters of Our Craft</p>
-            <div className="grid grid-cols-2 gap-2 mb-6 h-52">
-              <img src="/images/handcrafted-1.jpg" alt="Live Portrait Sketching" className="w-full h-full object-cover" />
-              <img src="/images/handcrafted-2.jpg" alt="Gold Gilding" className="w-full h-full object-cover" />
+            <div className="flex gap-2 mb-6 overflow-hidden" style={{ height: "208px" }}>
+              <img src="/images/handcrafted-1.jpg" alt="Live Portrait Sketching" className="w-1/2 object-cover" style={{ height: "208px" }} />
+              <img src="/images/handcrafted-2.jpg" alt="Gold Gilding" className="w-1/2 object-cover" style={{ height: "208px" }} />
             </div>
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Handcrafted<br />to Perfection
