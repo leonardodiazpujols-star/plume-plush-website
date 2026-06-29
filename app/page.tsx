@@ -231,7 +231,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="relative fade-up" style={{ transitionDelay: "150ms" }}>
-              <img src="/images/plume_plush_instagram_post.jpg" alt="Live engraving at event" className="w-full h-[500px] object-cover shadow-2xl" />
+              <img src="/images/details-that-define-legacy.jpg" alt="Live engraving at event" className="w-full h-[500px] object-cover shadow-2xl" />
               <div className="absolute -bottom-6 -left-6 bg-[oklch(0.14_0.005_285)] p-6 max-w-[220px]">
                 <p className="text-[oklch(0.72_0.09_75)] text-[0.6rem] tracking-[0.2em] uppercase mb-2" style={{ fontFamily: "'Jost', sans-serif" }}>
                   Our Promise
