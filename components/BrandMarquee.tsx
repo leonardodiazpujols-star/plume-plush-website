@@ -22,7 +22,7 @@ export default function BrandMarquee() {
   const track = [...brands, ...brands];
 
   return (
-    <section className="py-12 overflow-hidden" style={{ backgroundColor: "#1a1a22", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+    <section className="py-12 overflow-hidden" style={{ backgroundImage: "url('/images/bg_texture.png')", backgroundSize: "cover", backgroundPosition: "center", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <p className="text-center text-[0.55rem] tracking-[0.35em] uppercase text-[oklch(0.72_0.09_75)] mb-8" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
         Trusted by the World's Most Prestigious Houses
       </p>
