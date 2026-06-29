@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Star, Shield, Globe, Camera } from "lucide-react";
+import { ArrowRight, Star, Shield, Globe } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimationsInit } from "@/components/AnimationsInit";
@@ -353,24 +353,21 @@ export default function Home() {
           {/* 3×2 photo grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { event: "Riyadh Season",      location: "Saudi Arabia" },
-              { event: "Paris Fashion Week", location: "France"       },
-              { event: "Art Basel",          location: "Miami"        },
-              { event: "Dubai Expo",         location: "UAE"          },
-              { event: "Venice Biennale",    location: "Italy"        },
-              { event: "Singapore F1 Gala",  location: "Singapore"   },
+              { event: "Lipstick Live Portrait",   location: "Dubai",        src: "/images/world/lipstick-live-portrait-dubai.jpg"   },
+              { event: "Silhouette Paper-Cut",     location: "Dubai",        src: "/images/world/silhouette-paper-cut-dubai.jpg"     },
+              { event: "Live Embroidery",          location: "UK & Germany", src: "/images/world/live-embroidery-uk-germany.jpg"     },
+              { event: "Live Sketching",           location: "EMEA & APAC", src: "/images/world/live-sketching-emea-apac.jpg"       },
+              { event: "The Art of Live Sketching",location: "",             src: "/images/world/the-art-of-live-sketching.jpg"      },
+              { event: "Live Engraving",           location: "EMEA & APAC", src: "/images/world/live-engraving-emea-apac.jpg"       },
             ].map((item, i) => (
               <div key={item.event} className="fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
-                {/* Placeholder card */}
-                <div className="relative bg-[oklch(0.11_0.004_285)] aspect-[4/3] flex flex-col items-center justify-center border border-white/8">
-                  {/* Corner brackets */}
-                  <span className="absolute top-3 left-3 w-5 h-5 border-t border-l border-white/25" />
-                  <span className="absolute bottom-3 right-3 w-5 h-5 border-b border-r border-white/25" />
-                  {/* Camera icon */}
-                  <Camera size={26} strokeWidth={1} className="text-white/25 mb-3" />
-                  <p className="text-[0.55rem] tracking-[0.25em] uppercase text-white/20" style={{ fontFamily: "'Jost', sans-serif" }}>
-                    Insert Photo
-                  </p>
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src={item.src}
+                    alt={item.event}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
                 {/* Caption */}
                 <div className="mt-4 text-center">
@@ -380,9 +377,11 @@ export default function Home() {
                   >
                     {item.event}
                   </p>
-                  <p className="text-[0.6rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
-                    {item.location}
-                  </p>
+                  {item.location && (
+                    <p className="text-[0.6rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
+                      {item.location}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
