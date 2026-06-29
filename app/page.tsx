@@ -42,8 +42,8 @@ export default function Home() {
           <p className="text-[0.7rem] tracking-[0.25em] uppercase text-white/70" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
             Exquisite Creations. Timeless Legacy.
           </p>
-          <a href="/services" className="btn-gold mt-4">
-            Discover the World of P&amp;P
+          <a href="#world-of-pp" className="btn-gold mt-4">
+            Discover the World of Plume &amp; Plush
           </a>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
@@ -325,7 +325,7 @@ export default function Home() {
       </section>
 
       {/* WORLD OF PLUME & PLUSH */}
-      <section className="bg-[oklch(0.08_0.004_285)] py-24">
+      <section id="world-of-pp" className="bg-[oklch(0.08_0.004_285)] py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
           {/* Header */}
