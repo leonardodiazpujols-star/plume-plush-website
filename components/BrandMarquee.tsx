@@ -15,7 +15,10 @@ const brands = [
   { name: "Juliette Has a Gun", src: "/images/brands/juliette-has-a-gun.svg" },
   { name: "Max Mara",           src: "/images/brands/max-mara.svg" },
   { name: "Marina Rinaldi",     src: "/images/brands/marina-rinaldi.svg" },
-  { name: "Matière Première",   src: "/images/brands/matiere-premiere.svg" },
+  { name: "Matière Première",        src: "/images/brands/matiere-premiere.svg"        },
+  { name: "Maison Francis Kurkdjian", src: "/images/brands/maison-francis-kurkdjian.svg" },
+  { name: "Fendi",                    src: "/images/brands/fendi.svg"                    },
+  { name: "Pomellato",                src: "/images/brands/pomellato.svg"                },
 ];
 
 export default function BrandMarquee() {
