@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[oklch(0.10_0.005_285)] text-white/70">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1 flex flex-col items-start gap-4">
-          <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-24 w-auto object-contain" />
+          <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-40 w-auto object-contain" />
           <p className="text-[0.75rem] leading-relaxed text-white/50 max-w-[200px]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
             Where artistry meets prestige. Crafted for the exceptional.
           </p>

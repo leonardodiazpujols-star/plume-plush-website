@@ -31,7 +31,7 @@ export default function Navigation() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         <Link href="/" className="flex items-center">
-          <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-16 w-auto object-contain" />
+          <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-24 w-auto object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
