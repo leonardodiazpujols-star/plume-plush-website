@@ -63,8 +63,8 @@ export default function Home() {
           <div className="px-8 py-4 fade-up">
             <p className="eyebrow mb-4">Masters of Our Craft</p>
             <div className="grid grid-cols-2 gap-2 mb-6">
-              <img src="/images/web_live_sketching.png" alt="Live Sketching" className="w-full h-40 object-cover" />
-              <img src="/images/web_calligraphy.png" alt="Calligraphy" className="w-full h-40 object-cover" />
+              <img src="/images/handcrafted-1.jpg" alt="Live Portrait Sketching" className="w-full h-40 object-cover" />
+              <img src="/images/handcrafted-2.jpg" alt="Gold Gilding" className="w-full h-40 object-cover" />
             </div>
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Handcrafted<br />to Perfection
