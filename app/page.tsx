@@ -32,9 +32,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 flex flex-col items-center gap-6 px-6">
           <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-36 w-auto object-contain mb-2" />
-          <p className="text-[0.65rem] tracking-[0.4em] uppercase text-[oklch(0.72_0.09_75)]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
-            Plume &amp; Plush
-          </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl text-white leading-none" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
             Where Artistry<br />Meets Prestige
           </h1>
