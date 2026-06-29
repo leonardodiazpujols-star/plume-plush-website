@@ -25,8 +25,8 @@ export default function BrandMarquee() {
   const track = [...brands, ...brands];
 
   return (
-    <section className="py-12 overflow-hidden" style={{ backgroundImage: "url('/images/bg_texture.png')", backgroundSize: "cover", backgroundPosition: "center", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-      <p className="text-center text-[0.55rem] tracking-[0.35em] uppercase text-[oklch(0.72_0.09_75)] mb-8" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
+    <section className="py-14 overflow-hidden" style={{ backgroundColor: "#0d0d12", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+      <p className="text-center text-xs tracking-[0.35em] uppercase mb-10" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400, color: "oklch(0.72 0.09 75)" }}>
         Trusted by the World's Most Prestigious Houses
       </p>
       <div className="relative">
@@ -43,12 +43,12 @@ export default function BrandMarquee() {
                 <img
                   src={brand.src}
                   alt={brand.name}
-                  className="h-full w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-500 cursor-default"
+                  className="h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-500 cursor-default"
                   style={{ filter: "brightness(0) invert(1)" }}
                   draggable={false}
                 />
               </div>
-              <span className="text-[oklch(0.72_0.09_75)] text-[0.4rem] opacity-40">✦</span>
+              <span className="text-[0.4rem] opacity-40" style={{ color: "oklch(0.72 0.09 75)" }}>✦</span>
             </div>
           ))}
         </div>
