@@ -354,7 +354,7 @@ export default function Home() {
               { event: "Silhouette Paper-Cut",     location: "Dubai",        src: "/images/world/silhouette-paper-cut-dubai.jpg"     },
               { event: "Live Embroidery",          location: "UK & Germany", src: "/images/world/live-embroidery-uk-germany.jpg"     },
               { event: "Live Sketching",           location: "EMEA & APAC", src: "/images/world/live-sketching-emea-apac.jpg"       },
-              { event: "The Art of Live Sketching",location: "",             src: "/images/world/the-art-of-live-sketching.jpg"      },
+              { event: "In-Atelier Calligraphy",    location: "EMEA",         src: "/images/world/in-atelier-calligraphy-emea.jpg"     },
               { event: "Live Engraving",           location: "EMEA & APAC", src: "/images/world/live-engraving-emea-apac.jpg"       },
             ].map((item, i) => (
               <div key={item.event} className="fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
