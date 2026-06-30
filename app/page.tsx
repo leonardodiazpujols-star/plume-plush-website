@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimationsInit } from "@/components/AnimationsInit";
 import BrandMarquee from "@/components/BrandMarquee";
+import ArtisanEnquiryButton from "@/components/ArtisanEnquiryButton";
 
 export const metadata: Metadata = {
   title: "Plume & Plush — Where Artistry Meets Prestige",
@@ -68,9 +69,7 @@ export default function Home() {
             <p className="text-[0.8rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
               Each piece is born from the hands of master artisans, whose skill, dedication, and passion breathe life into every creation.
             </p>
-            <Link href="/services" className="eyebrow flex items-center gap-2 hover:gap-3 transition-all">
-              Meet the Artisans <ArrowRight size={12} />
-            </Link>
+            <ArtisanEnquiryButton variant="gold" />
           </div>
           <div className="px-8 py-4 fade-up" style={{ transitionDelay: "100ms" }}>
             <p className="eyebrow mb-4">Engraved with Distinction</p>
@@ -195,6 +194,11 @@ export default function Home() {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-12 text-center fade-up">
+            <ArtisanEnquiryButton variant="gold" />
           </div>
 
         </div>
