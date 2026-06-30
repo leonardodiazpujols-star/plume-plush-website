@@ -141,9 +141,9 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <a href="#contact" className={service.accent === "dark" ? "btn-gold" : "btn-gold-filled"}>
-                    Enquire Now
-                  </a>
+                  <Link href="/book" className={service.accent === "dark" ? "btn-gold" : "btn-gold-filled"}>
+                    Book an Artisan
+                  </Link>
                 </div>
               </div>
             </div>

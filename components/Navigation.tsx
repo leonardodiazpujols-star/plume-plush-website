@@ -51,9 +51,9 @@ export default function Navigation() {
           })}
         </nav>
 
-        <a href="#contact" className="hidden md:block btn-gold text-[0.6rem]" style={{ padding: "0.5rem 1.5rem" }}>
+        <Link href="/book" className="hidden md:block btn-gold text-[0.6rem]" style={{ padding: "0.5rem 1.5rem" }}>
           Book Now
-        </a>
+        </Link>
 
         <button className="md:hidden text-white p-2" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu">
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -73,7 +73,7 @@ export default function Navigation() {
               {link.label}
             </Link>
           ))}
-          <a href="#contact" className="btn-gold text-center mt-2">Book Now</a>
+          <Link href="/book" className="btn-gold text-center mt-2" onClick={() => setMobileOpen(false)}>Book Now</Link>
         </div>
       )}
     </header>
