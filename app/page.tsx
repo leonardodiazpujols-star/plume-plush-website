@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Star, Shield, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimationsInit } from "@/components/AnimationsInit";
@@ -119,88 +119,6 @@ export default function Home() {
               <p className="text-[0.75rem] text-[oklch(0.5_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{v.desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* P&P ARTISTIC STANDARD */}
-      <section className="bg-[oklch(0.08_0.004_285)] py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-
-          {/* Header */}
-          <div className="mb-16 fade-up">
-            <div className="flex items-center gap-5 mb-8">
-              <div className="w-10 h-px bg-[oklch(0.72_0.09_75)]" />
-              <p className="eyebrow">Our Standard</p>
-            </div>
-            <h2
-              className="text-5xl md:text-7xl text-white mb-8 leading-tight"
-              style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
-            >
-              The P&amp;P Artistic Standard
-            </h2>
-            <p
-              className="text-[0.94rem] tracking-[0.18em] uppercase text-[oklch(0.72_0.09_75)] mb-7 font-bold"
-              style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
-            >
-              We do not just find artists — we curate mastery.
-            </p>
-            <p
-              className="text-[0.85rem] text-white/45 max-w-2xl leading-relaxed"
-              style={{ fontWeight: 300 }}
-            >
-              Plume &amp; Plush transcends the term "artisan" by working exclusively with highly
-              qualified masters of their craft, selected to deliver experiences that meet the
-              exacting demands of the world's most prestigious houses.
-            </p>
-          </div>
-
-          {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              {
-                Icon: Star,
-                title: "Masters of Their Craft",
-                desc: "Every artist in our network holds a minimum of 10 years' professional experience in their discipline, with credentials verified through direct assessment by our artistic directors.",
-              },
-              {
-                Icon: Shield,
-                title: "Brand-Aligned Execution",
-                desc: "We conduct rigorous brand alignment sessions before every activation, ensuring each artisan fully understands and embodies the aesthetic language of the commissioning maison.",
-              },
-              {
-                Icon: Globe,
-                title: "Global Cultural Fluency",
-                desc: "Our artisans are selected not only for technical mastery but for their deep cultural literacy — enabling authentic, resonant experiences across Arabic, European, and Asian luxury markets.",
-              },
-            ].map((item, i) => (
-              <div
-                key={item.title}
-                className="border border-white/10 bg-white/[0.03] p-10 hover:border-[oklch(0.72_0.09_75)]/40 transition-colors duration-300 fade-up"
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <item.Icon
-                  size={28}
-                  strokeWidth={1.25}
-                  className="text-[oklch(0.72_0.09_75)] mb-8"
-                />
-                <h3
-                  className="text-xl text-white mb-5 leading-snug"
-                  style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}
-                >
-                  {item.title}
-                </h3>
-                <p className="text-[0.8rem] text-white/45 leading-relaxed" style={{ fontWeight: 300 }}>
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="mt-12 text-center fade-up">
-            <ArtisanEnquiryButton variant="gold" />
-          </div>
-
         </div>
       </section>
 
