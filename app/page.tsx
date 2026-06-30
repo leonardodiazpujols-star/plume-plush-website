@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           <div className="px-8 py-4 fade-up" style={{ transitionDelay: "200ms" }}>
             <p className="eyebrow mb-4">Global DNA</p>
-            <img src="/images/web_global_map.png" alt="Global Presence" className="w-full h-52 object-cover mb-6" />
+            <img src="/images/global-dna.png" alt="Global Presence" className="w-full h-52 object-cover mb-6" />
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Rooted in Heritage,<br />Inspired by the World
             </h2>
