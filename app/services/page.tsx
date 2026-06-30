@@ -151,6 +151,40 @@ export default function Services() {
         );
       })}
 
+      {/* PROCESS */}
+      <section
+        className="relative py-24"
+        style={{
+          backgroundImage: "url('/images/pink_marble_bg_wide.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-white/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16 fade-up">
+            <p className="eyebrow mb-3">How We Work</p>
+            <h2 className="text-5xl text-[oklch(0.14_0.005_285)]" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
+              The Plume &amp; Plush Process
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { step: "01", title: "Consultation", desc: "We begin with a detailed conversation to understand your vision, event, and expectations." },
+              { step: "02", title: "Curation", desc: "Our team selects the perfect artisans and crafts a bespoke proposal tailored to your needs." },
+              { step: "03", title: "Creation", desc: "Master artisans bring your vision to life with meticulous attention to every detail." },
+              { step: "04", title: "Delivery", desc: "We ensure flawless execution on the day, leaving you free to enjoy the experience." },
+            ].map((p, i) => (
+              <div key={p.step} className="text-center fade-up" style={{ transitionDelay: `${i * 100}ms` }}>
+                <div className="text-5xl text-[oklch(0.14_0.005_285)] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>{p.step}</div>
+                <h3 className="text-xl text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>{p.title}</h3>
+                <p className="text-[0.78rem] text-[oklch(0.4_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* P&P ARTISTIC STANDARD */}
       <section className="bg-[oklch(0.08_0.004_285)] py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -215,40 +249,6 @@ export default function Services() {
 
           <div className="mt-12 text-center fade-up">
             <ArtisanEnquiryButton variant="gold" />
-          </div>
-        </div>
-      </section>
-
-      {/* PROCESS */}
-      <section
-        className="relative py-24"
-        style={{
-          backgroundImage: "url('/images/pink_marble_bg_wide.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-white/40" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16 fade-up">
-            <p className="eyebrow mb-3">How We Work</p>
-            <h2 className="text-5xl text-[oklch(0.14_0.005_285)]" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
-              The Plume &amp; Plush Process
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: "01", title: "Consultation", desc: "We begin with a detailed conversation to understand your vision, event, and expectations." },
-              { step: "02", title: "Curation", desc: "Our team selects the perfect artisans and crafts a bespoke proposal tailored to your needs." },
-              { step: "03", title: "Creation", desc: "Master artisans bring your vision to life with meticulous attention to every detail." },
-              { step: "04", title: "Delivery", desc: "We ensure flawless execution on the day, leaving you free to enjoy the experience." },
-            ].map((p, i) => (
-              <div key={p.step} className="text-center fade-up" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="text-5xl text-[oklch(0.14_0.005_285)] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>{p.step}</div>
-                <h3 className="text-xl text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>{p.title}</h3>
-                <p className="text-[0.78rem] text-[oklch(0.4_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{p.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
