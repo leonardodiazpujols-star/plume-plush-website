@@ -66,7 +66,7 @@ export default function Home() {
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Handcrafted<br />to Perfection
             </h2>
-            <p className="text-[0.8rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
+            <p className="text-[0.92rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
               Each piece is born from the hands of master artisans, whose skill, dedication, and passion breathe life into every creation.
             </p>
             <ArtisanEnquiryButton variant="gold" />
@@ -77,7 +77,7 @@ export default function Home() {
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Details That<br />Define Legacy
             </h2>
-            <p className="text-[0.8rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
+            <p className="text-[0.92rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
               Our signature engravings are more than details — they are marks of heritage, prestige, and unparalleled attention to detail.
             </p>
             <Link href="/services" className="eyebrow flex items-center gap-2 hover:gap-3 transition-all">
@@ -90,7 +90,7 @@ export default function Home() {
             <h2 className="text-3xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>
               Rooted in Heritage,<br />Inspired by the World
             </h2>
-            <p className="text-[0.8rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
+            <p className="text-[0.92rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-5" style={{ fontWeight: 300 }}>
               A global perspective shapes our creations. Offices in London, Dubai, Paris &amp; Milan.
             </p>
             <a href="#global" className="eyebrow flex items-center gap-2 hover:gap-3 transition-all">
@@ -116,7 +116,7 @@ export default function Home() {
               <h3 className="text-[0.65rem] tracking-[0.2em] uppercase text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
                 {v.title}
               </h3>
-              <p className="text-[0.75rem] text-[oklch(0.5_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{v.desc}</p>
+              <p className="text-[0.875rem] text-[oklch(0.5_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{v.desc}</p>
             </div>
           ))}
         </div>
@@ -144,7 +144,7 @@ export default function Home() {
                 <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
                 <div className="w-12 h-px bg-[oklch(0.72_0.09_75)]" />
               </div>
-              <p className="text-[0.85rem] text-[oklch(0.3_0.01_285)] leading-relaxed mb-8 max-w-md" style={{ fontWeight: 300 }}>
+              <p className="text-[1rem] text-[oklch(0.3_0.01_285)] leading-relaxed mb-8 max-w-md" style={{ fontWeight: 300 }}>
                 Our master portrait artists create bespoke sketches live at your event — weddings, galas, brand activations, and private celebrations. Each portrait is a keepsake of an unforgettable moment.
               </p>
               <Link href="/services" className="btn-gold-filled">
@@ -179,7 +179,7 @@ export default function Home() {
               <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
               <div className="w-16 h-px bg-[oklch(0.72_0.09_75)]" />
             </div>
-            <p className="text-[0.8rem] text-white/50 mt-4 max-w-xl mx-auto" style={{ fontWeight: 300 }}>
+            <p className="text-[0.92rem] text-white/50 mt-4 max-w-xl mx-auto" style={{ fontWeight: 300 }}>
               Iconic creations that embody elegance, heritage, and refined luxury.
             </p>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-xl text-white mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>{s.title}</h3>
-                  <p className="text-[0.75rem] text-white/60 leading-relaxed" style={{ fontWeight: 300 }}>{s.desc}</p>
+                  <p className="text-[0.875rem] text-white/60 leading-relaxed" style={{ fontWeight: 300 }}>{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -221,7 +221,7 @@ export default function Home() {
                 <div className="w-12 h-px bg-[oklch(0.72_0.09_75)]" />
                 <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
               </div>
-              <p className="text-[0.85rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-8 max-w-md" style={{ fontWeight: 300 }}>
+              <p className="text-[1rem] text-[oklch(0.4_0.01_285)] leading-relaxed mb-8 max-w-md" style={{ fontWeight: 300 }}>
                 From our headquarters in London to our studios in Dubai, Paris, and Milan — Plume &amp; Plush brings world-class artisanship wherever you are.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -233,7 +233,7 @@ export default function Home() {
                 ].map((loc) => (
                   <div key={loc.city} className="border-l-2 border-[oklch(0.72_0.09_75)] pl-4">
                     <p className="text-[0.65rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)] mb-1" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>{loc.city}</p>
-                    <p className="text-[0.75rem] text-[oklch(0.5_0.01_285)]" style={{ fontWeight: 300 }}>{loc.detail}</p>
+                    <p className="text-[0.875rem] text-[oklch(0.5_0.01_285)]" style={{ fontWeight: 300 }}>{loc.detail}</p>
                   </div>
                 ))}
               </div>
@@ -262,7 +262,7 @@ export default function Home() {
             >
               The World of Plume &amp; Plush
             </h2>
-            <p className="text-[0.85rem] text-white/45 max-w-2xl leading-relaxed" style={{ fontWeight: 300 }}>
+            <p className="text-[1rem] text-white/45 max-w-2xl leading-relaxed" style={{ fontWeight: 300 }}>
               Artistry Without Borders. From private salons in Paris to grand galas in Dubai,
               our live activations grace the world's most prestigious stages.
             </p>
@@ -339,7 +339,7 @@ export default function Home() {
           <h2 className="text-5xl text-[oklch(0.14_0.005_285)] mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
             Commission Something Extraordinary
           </h2>
-          <p className="text-[0.85rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed" style={{ fontWeight: 300 }}>
+          <p className="text-[1rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed" style={{ fontWeight: 300 }}>
             Whether you are planning a private event, a brand activation, or a bespoke commission, our team is ready to bring your vision to life with uncompromising artistry.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -101,7 +101,7 @@ export default function Services() {
             <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
             <div className="w-16 h-px bg-[oklch(0.72_0.09_75)]" />
           </div>
-          <p className="text-[0.75rem] tracking-[0.2em] uppercase text-white/60 max-w-lg" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
+          <p className="text-[0.875rem] tracking-[0.2em] uppercase text-white/60 max-w-lg" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
             From live artisan experiences to bespoke commissions — every service is an act of devotion to the extraordinary.
           </p>
         </div>
@@ -130,14 +130,14 @@ export default function Services() {
                     <div className="w-12 h-px bg-[oklch(0.72_0.09_75)]" />
                     <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
                   </div>
-                  <p className={`text-[0.85rem] ${subTextClass} leading-relaxed mb-8 max-w-md`} style={{ fontWeight: 300 }}>
+                  <p className={`text-[1rem] ${subTextClass} leading-relaxed mb-8 max-w-md`} style={{ fontWeight: 300 }}>
                     {service.description}
                   </p>
                   <ul className="flex flex-col gap-3">
                     {service.features.map((f) => (
                       <li key={f} className="flex items-center gap-3">
                         <Check size={12} className="text-[oklch(0.72_0.09_75)]" />
-                        <span className={`text-[0.78rem] ${subTextClass}`} style={{ fontWeight: 300 }}>{f}</span>
+                        <span className={`text-[0.9rem] ${subTextClass}`} style={{ fontWeight: 300 }}>{f}</span>
                       </li>
                     ))}
                   </ul>
@@ -175,7 +175,7 @@ export default function Services() {
               <div key={p.step} className="text-center fade-up" style={{ transitionDelay: `${i * 100}ms` }}>
                 <div className="text-5xl text-[oklch(0.14_0.005_285)] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>{p.step}</div>
                 <h3 className="text-xl text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>{p.title}</h3>
-                <p className="text-[0.78rem] text-[oklch(0.4_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{p.desc}</p>
+                <p className="text-[0.9rem] text-[oklch(0.4_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{p.desc}</p>
               </div>
             ))}
           </div>
@@ -200,7 +200,7 @@ export default function Services() {
               style={{ fontFamily: "'Jost', sans-serif" }}>
               We do not just find artists — we curate mastery.
             </p>
-            <p className="text-[0.85rem] text-white/45 max-w-2xl leading-relaxed" style={{ fontWeight: 300 }}>
+            <p className="text-[1rem] text-white/45 max-w-2xl leading-relaxed" style={{ fontWeight: 300 }}>
               Plume &amp; Plush transcends the term "artisan" by working exclusively with highly
               qualified masters of their craft, selected to deliver experiences that meet the
               exacting demands of the world's most prestigious houses.
@@ -237,7 +237,7 @@ export default function Services() {
                 >
                   {item.title}
                 </h3>
-                <p className="text-[0.8rem] text-white/45 leading-relaxed" style={{ fontWeight: 300 }}>
+                <p className="text-[0.92rem] text-white/45 leading-relaxed" style={{ fontWeight: 300 }}>
                   {item.desc}
                 </p>
               </div>
@@ -276,8 +276,8 @@ export default function Services() {
                 <div className="text-2xl mb-3">{office.flag}</div>
                 <h3 className="text-xl text-white mb-1" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>{office.city}</h3>
                 <p className="text-[0.6rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)] mb-4" style={{ fontFamily: "'Jost', sans-serif" }}>{office.role}</p>
-                <p className="text-[0.75rem] text-white/50 leading-relaxed whitespace-pre-line mb-3" style={{ fontWeight: 300 }}>{office.address}</p>
-                <p className="text-[0.75rem] text-[oklch(0.72_0.09_75)]/70" style={{ fontWeight: 300 }}>{office.phone}</p>
+                <p className="text-[0.875rem] text-white/50 leading-relaxed whitespace-pre-line mb-3" style={{ fontWeight: 300 }}>{office.address}</p>
+                <p className="text-[0.875rem] text-[oklch(0.72_0.09_75)]/70" style={{ fontWeight: 300 }}>{office.phone}</p>
               </div>
             ))}
           </div>
@@ -291,11 +291,11 @@ export default function Services() {
           <h2 className="text-5xl text-[oklch(0.14_0.005_285)] mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
             Begin Your<br />Bespoke Journey
           </h2>
-          <p className="text-[0.85rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed" style={{ fontWeight: 300 }}>
+          <p className="text-[1rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed" style={{ fontWeight: 300 }}>
             Tell us about your event, your brand, or your vision. Our team will respond within 24 hours with a bespoke proposal crafted for your exact needs.
           </p>
           <Link href="/book" className="btn-gold-filled">Book an Artisan</Link>
-          <p className="mt-6 text-[0.72rem] text-[oklch(0.6_0.01_285)]" style={{ fontWeight: 300 }}>
+          <p className="mt-6 text-[0.83rem] text-[oklch(0.6_0.01_285)]" style={{ fontWeight: 300 }}>
             Prefer to talk?{" "}
             <a href="tel:+447415202350" className="text-[oklch(0.72_0.09_75)] hover:underline">Call London</a>
           </p>

@@ -94,7 +94,7 @@ export default function ArtisanEnquiryForm() {
   const today = new Date().toISOString().split("T")[0];
 
   const inputBase =
-    "w-full px-4 py-3.5 bg-white border text-[0.85rem] text-[oklch(0.14_0.005_285)] placeholder-[oklch(0.7_0.005_285)] outline-none transition-all duration-200 focus:ring-1";
+    "w-full px-4 py-3.5 bg-white border text-[1rem] text-[oklch(0.14_0.005_285)] placeholder-[oklch(0.7_0.005_285)] outline-none transition-all duration-200 focus:ring-1";
   const inputCls = (f: keyof FormState) =>
     `${inputBase} ${errors[f]
       ? "border-red-400 ring-red-200"
@@ -113,7 +113,7 @@ export default function ArtisanEnquiryForm() {
         <h2 className="text-5xl text-[oklch(0.14_0.005_285)] mb-6 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
           Thank you.
         </h2>
-        <p className="text-[0.85rem] text-[oklch(0.5_0.01_285)] leading-relaxed max-w-md" style={{ fontWeight: 300 }}>
+        <p className="text-[1rem] text-[oklch(0.5_0.01_285)] leading-relaxed max-w-md" style={{ fontWeight: 300 }}>
           Your request has been received by our Art Concierge team. We will carefully review your requirements and be in touch shortly to discuss the perfect artisan for your project.
         </p>
         <div className="flex items-center gap-4 mt-8">
@@ -250,7 +250,7 @@ export default function ArtisanEnquiryForm() {
             <Upload size={24} strokeWidth={1.5} className={`mx-auto mb-4 ${gold} opacity-60`} />
             {file ? (
               <div>
-                <p className="text-[0.85rem] text-[oklch(0.14_0.005_285)] font-medium">{file.name}</p>
+                <p className="text-[1rem] text-[oklch(0.14_0.005_285)] font-medium">{file.name}</p>
                 <p className="text-[0.7rem] text-[oklch(0.6_0.005_285)] mt-1">{(file.size / 1024 / 1024).toFixed(1)} MB</p>
                 <button type="button" onClick={e => { e.stopPropagation(); setFile(null); }}
                   className="text-[0.65rem] text-red-400 mt-2 hover:underline">Remove</button>
@@ -275,7 +275,7 @@ export default function ArtisanEnquiryForm() {
 
       {/* Error */}
       {status === "error" && (
-        <p className="text-red-500 text-[0.78rem] mt-6 px-5 py-4 border border-red-200 bg-red-50">
+        <p className="text-red-500 text-[0.9rem] mt-6 px-5 py-4 border border-red-200 bg-red-50">
           {errorMsg}
         </p>
       )}

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1 flex flex-col items-start gap-4">
           <img src="/images/pp_monogram_transparent.png" alt="Plume & Plush" className="h-40 w-auto object-contain" />
-          <p className="text-[0.75rem] leading-relaxed text-white/50 max-w-[200px]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
+          <p className="text-[0.875rem] leading-relaxed text-white/50 max-w-[200px]" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
             Where artistry meets prestige. Crafted for the exceptional.
           </p>
         </div>
@@ -22,7 +22,7 @@ export default function Footer() {
               { label: "Contact", href: "/contact" },
             ].map((item) => (
               <li key={item.label}>
-                <Link href={item.href} className="text-[0.75rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
+                <Link href={item.href} className="text-[0.875rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
                   {item.label}
                 </Link>
               </li>
@@ -32,7 +32,7 @@ export default function Footer() {
 
         <div>
           <h4 className="text-[0.6rem] tracking-[0.25em] uppercase text-[oklch(0.72_0.09_75)] mb-5" style={{ fontFamily: "'Jost', sans-serif" }}>Contact</h4>
-          <ul className="flex flex-col gap-3 text-[0.75rem] text-white/50" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
+          <ul className="flex flex-col gap-3 text-[0.875rem] text-white/50" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
             <li>London: +44 (0)7415 202 350</li>
             <li>Dubai: +971 58 301 8359</li>
             <li>
@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div>
           <h4 className="text-[0.6rem] tracking-[0.25em] uppercase text-[oklch(0.72_0.09_75)] mb-5" style={{ fontFamily: "'Jost', sans-serif" }}>Hours</h4>
-          <p className="text-[0.75rem] text-white/50 mb-6" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
+          <p className="text-[0.875rem] text-white/50 mb-6" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>
             Monday – Saturday<br />9:00 am – 8:00 pm<br />Sunday – Closed
           </p>
           <h4 className="text-[0.6rem] tracking-[0.25em] uppercase text-[oklch(0.72_0.09_75)] mb-4" style={{ fontFamily: "'Jost', sans-serif" }}>Follow</h4>

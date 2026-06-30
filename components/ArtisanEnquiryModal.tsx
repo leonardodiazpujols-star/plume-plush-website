@@ -111,7 +111,7 @@ export default function ArtisanEnquiryModal({ onClose }: { onClose: () => void }
 
   const today = new Date().toISOString().split("T")[0];
 
-  const inputBase = "w-full px-4 py-3 bg-white border text-[0.85rem] text-[oklch(0.14_0.005_285)] placeholder-[oklch(0.65_0.005_285)] outline-none transition-all duration-200 focus:ring-1";
+  const inputBase = "w-full px-4 py-3 bg-white border text-[1rem] text-[oklch(0.14_0.005_285)] placeholder-[oklch(0.65_0.005_285)] outline-none transition-all duration-200 focus:ring-1";
   const inputCls = (f: keyof FormState) =>
     `${inputBase} ${errors[f]
       ? "border-red-400 ring-red-200"
@@ -175,7 +175,7 @@ export default function ArtisanEnquiryModal({ onClose }: { onClose: () => void }
                 <h2 className="text-4xl md:text-5xl text-[oklch(0.14_0.005_285)] mb-3 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
                   Request an Artisan
                 </h2>
-                <p className="text-[0.8rem] text-[oklch(0.5_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>
+                <p className="text-[0.92rem] text-[oklch(0.5_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>
                   Tell us about your project and our Art Concierge will match you with the perfect artisan.
                 </p>
                 <div className="flex items-center gap-3 mt-5">
@@ -301,7 +301,7 @@ export default function ArtisanEnquiryModal({ onClose }: { onClose: () => void }
                       </div>
                     ) : (
                       <>
-                        <p className="text-[0.8rem] text-[oklch(0.45_0.01_285)]">
+                        <p className="text-[0.92rem] text-[oklch(0.45_0.01_285)]">
                           Drag & drop or <span className={gold}>browse</span>
                         </p>
                         <p className="text-[0.62rem] text-[oklch(0.65_0.005_285)] mt-1.5">JPG, PNG, PDF — max 10MB</p>
@@ -317,7 +317,7 @@ export default function ArtisanEnquiryModal({ onClose }: { onClose: () => void }
 
                 {/* Error */}
                 {status === "error" && (
-                  <p className="text-red-500 text-[0.75rem] mb-5 px-4 py-3 border border-red-200 bg-red-50">
+                  <p className="text-red-500 text-[0.875rem] mb-5 px-4 py-3 border border-red-200 bg-red-50">
                     {errorMsg}
                   </p>
                 )}

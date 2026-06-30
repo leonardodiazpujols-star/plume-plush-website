@@ -58,7 +58,7 @@ export default function Contact() {
             <span className="text-[oklch(0.72_0.09_75)] text-xs">✦</span>
             <div className="w-16 h-px bg-[oklch(0.72_0.09_75)]" />
           </div>
-          <p className="text-[0.75rem] tracking-[0.2em] uppercase text-white/60 max-w-lg" style={{ fontWeight: 300 }}>
+          <p className="text-[0.875rem] tracking-[0.2em] uppercase text-white/60 max-w-lg" style={{ fontWeight: 300 }}>
             We'd love to hear from you. Reach out and let's create something extraordinary together.
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function Contact() {
           >
             United Kingdom · Europe · GCC
           </h2>
-          <p className="text-[0.85rem] text-[oklch(0.5_0.01_285)] max-w-xl mx-auto" style={{ fontWeight: 300 }}>
+          <p className="text-[1rem] text-[oklch(0.5_0.01_285)] max-w-xl mx-auto" style={{ fontWeight: 300 }}>
             We are now operating across the United Kingdom, Europe, and the Gulf Cooperation Council — bringing world-class artisanship wherever you are.
           </p>
         </div>
@@ -169,19 +169,19 @@ export default function Contact() {
                 <div className="flex flex-col gap-4">
                   <div className="flex items-start gap-3">
                     <MapPin size={14} className="text-[oklch(0.72_0.09_75)] mt-0.5 shrink-0" />
-                    <p className="text-[0.78rem] text-white/50 leading-relaxed whitespace-pre-line" style={{ fontWeight: 300 }}>
+                    <p className="text-[0.9rem] text-white/50 leading-relaxed whitespace-pre-line" style={{ fontWeight: 300 }}>
                       {office.address}
                     </p>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone size={14} className="text-[oklch(0.72_0.09_75)] shrink-0" />
-                    <a href={`tel:${office.phone.replace(/\s/g, "")}`} className="text-[0.78rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
+                    <a href={`tel:${office.phone.replace(/\s/g, "")}`} className="text-[0.9rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
                       {office.phone}
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail size={14} className="text-[oklch(0.72_0.09_75)] shrink-0" />
-                    <a href={`mailto:${office.email}`} className="text-[0.78rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
+                    <a href={`mailto:${office.email}`} className="text-[0.9rem] text-white/50 hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
                       {office.email}
                     </a>
                   </div>
@@ -205,12 +205,12 @@ export default function Contact() {
               </div>
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between border-b border-[oklch(0.88_0.01_75)] pb-3">
-                  <span className="text-[0.8rem] text-[oklch(0.4_0.01_285)]" style={{ fontWeight: 300 }}>Monday – Saturday</span>
-                  <span className="text-[0.8rem] text-[oklch(0.72_0.09_75)]" style={{ fontWeight: 400 }}>9:00 am – 8:00 pm</span>
+                  <span className="text-[0.92rem] text-[oklch(0.4_0.01_285)]" style={{ fontWeight: 300 }}>Monday – Saturday</span>
+                  <span className="text-[0.92rem] text-[oklch(0.72_0.09_75)]" style={{ fontWeight: 400 }}>9:00 am – 8:00 pm</span>
                 </div>
                 <div className="flex justify-between pb-3">
-                  <span className="text-[0.8rem] text-[oklch(0.4_0.01_285)]" style={{ fontWeight: 300 }}>Sunday</span>
-                  <span className="text-[0.8rem] text-[oklch(0.5_0.01_285)]" style={{ fontWeight: 300 }}>Closed</span>
+                  <span className="text-[0.92rem] text-[oklch(0.4_0.01_285)]" style={{ fontWeight: 300 }}>Sunday</span>
+                  <span className="text-[0.92rem] text-[oklch(0.5_0.01_285)]" style={{ fontWeight: 300 }}>Closed</span>
                 </div>
               </div>
             </div>

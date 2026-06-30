@@ -57,7 +57,7 @@ export default function About() {
             <div className="w-16 h-px bg-[oklch(0.72_0.09_75)]" />
           </div>
           <p
-            className="text-[0.85rem] text-white/70 max-w-2xl leading-relaxed"
+            className="text-[1rem] text-white/70 max-w-2xl leading-relaxed"
             style={{ fontWeight: 300 }}
           >
             We believe in the transformative power of art and creativity. Our platform bridges the gap between visionary artists and luxurious brands, facilitating collaborations that bring visual ideas to life in the most innovative and captivating ways.
@@ -272,7 +272,7 @@ export default function About() {
             <div className="w-16 h-px bg-[oklch(0.72_0.09_75)]" />
           </div>
           <p
-            className="text-[0.8rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)] mb-10"
+            className="text-[0.92rem] tracking-[0.2em] uppercase text-[oklch(0.72_0.09_75)] mb-10"
             style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
           >
             We are the Narrator. The intermediary that makes it happen.
@@ -292,7 +292,7 @@ export default function About() {
             Begin a Collaboration
           </h2>
           <p
-            className="text-[0.85rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed"
+            className="text-[1rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed"
             style={{ fontWeight: 300 }}
           >
             Whether you are a luxury brand seeking a creative partner or an artist looking to connect with exceptional clients, we would love to hear from you.

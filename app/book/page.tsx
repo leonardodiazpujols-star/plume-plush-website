@@ -29,7 +29,7 @@ export default function BookPage() {
           >
             Request an Artisan
           </h1>
-          <p className="text-[0.85rem] text-white/45 max-w-xl leading-relaxed" style={{ fontWeight: 300 }}>
+          <p className="text-[1rem] text-white/45 max-w-xl leading-relaxed" style={{ fontWeight: 300 }}>
             Tell us about your project and our Art Concierge team will match you with the perfect artisan for your occasion.
           </p>
         </div>
@@ -58,8 +58,8 @@ export default function BookPage() {
                       <li key={item.n} className="flex gap-4">
                         <span className="text-[0.65rem] text-[oklch(0.72_0.09_75)] shrink-0 mt-0.5" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}>{item.n}</span>
                         <div>
-                          <p className="text-[0.75rem] text-[oklch(0.14_0.005_285)] mb-1" style={{ fontWeight: 500 }}>{item.t}</p>
-                          <p className="text-[0.72rem] text-[oklch(0.55_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{item.d}</p>
+                          <p className="text-[0.875rem] text-[oklch(0.14_0.005_285)] mb-1" style={{ fontWeight: 500 }}>{item.t}</p>
+                          <p className="text-[0.83rem] text-[oklch(0.55_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{item.d}</p>
                         </div>
                       </li>
                     ))}
@@ -71,10 +71,10 @@ export default function BookPage() {
                     Prefer to talk?
                   </p>
                   <div className="space-y-3">
-                    <a href="mailto:anna@plumeplush.com" className="block text-[0.78rem] text-[oklch(0.14_0.005_285)] hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
+                    <a href="mailto:anna@plumeplush.com" className="block text-[0.9rem] text-[oklch(0.14_0.005_285)] hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
                       anna@plumeplush.com
                     </a>
-                    <a href="tel:+447415202350" className="block text-[0.78rem] text-[oklch(0.14_0.005_285)] hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
+                    <a href="tel:+447415202350" className="block text-[0.9rem] text-[oklch(0.14_0.005_285)] hover:text-[oklch(0.72_0.09_75)] transition-colors" style={{ fontWeight: 300 }}>
                       +44 7415 202 350
                     </a>
                   </div>

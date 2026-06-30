@@ -7,7 +7,7 @@ export default function NotFound() {
       <h1 className="text-6xl text-[oklch(0.14_0.005_285)] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>
         Page Not Found
       </h1>
-      <p className="text-[0.85rem] text-[oklch(0.5_0.01_285)] mb-10" style={{ fontWeight: 300 }}>
+      <p className="text-[1rem] text-[oklch(0.5_0.01_285)] mb-10" style={{ fontWeight: 300 }}>
         The page you are looking for does not exist.
       </p>
       <Link href="/" className="btn-gold">Return Home</Link>
