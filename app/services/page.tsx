@@ -133,7 +133,7 @@ export default function Services() {
                   <p className={`text-[0.85rem] ${subTextClass} leading-relaxed mb-8 max-w-md`} style={{ fontWeight: 300 }}>
                     {service.description}
                   </p>
-                  <ul className="flex flex-col gap-3 mb-8">
+                  <ul className="flex flex-col gap-3">
                     {service.features.map((f) => (
                       <li key={f} className="flex items-center gap-3">
                         <Check size={12} className="text-[oklch(0.72_0.09_75)]" />
@@ -141,9 +141,6 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/book" className={service.accent === "dark" ? "btn-gold" : "btn-gold-filled"}>
-                    Book an Artisan
-                  </Link>
                 </div>
               </div>
             </div>
@@ -297,10 +294,11 @@ export default function Services() {
           <p className="text-[0.85rem] text-[oklch(0.4_0.01_285)] mb-10 max-w-xl mx-auto leading-relaxed" style={{ fontWeight: 300 }}>
             Tell us about your event, your brand, or your vision. Our team will respond within 24 hours with a bespoke proposal crafted for your exact needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@plumeplush.com" className="btn-gold-filled">Email Us</a>
-            <a href="tel:+447415202350" className="btn-gold">Call London</a>
-          </div>
+          <Link href="/book" className="btn-gold-filled">Book an Artisan</Link>
+          <p className="mt-6 text-[0.72rem] text-[oklch(0.6_0.01_285)]" style={{ fontWeight: 300 }}>
+            Prefer to talk?{" "}
+            <a href="tel:+447415202350" className="text-[oklch(0.72_0.09_75)] hover:underline">Call London</a>
+          </p>
         </div>
       </section>
 
