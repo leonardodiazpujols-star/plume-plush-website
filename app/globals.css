@@ -207,9 +207,9 @@
 
   .eyebrow {
     font-family: 'Jost', sans-serif;
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     font-weight: 400;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: oklch(0.72 0.09 75);
   }

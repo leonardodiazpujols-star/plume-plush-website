@@ -139,7 +139,7 @@ export default function Home() {
               The P&amp;P Artistic Standard
             </h2>
             <p
-              className="text-[0.65rem] tracking-[0.25em] uppercase text-[oklch(0.72_0.09_75)] mb-7"
+              className="text-[0.78rem] tracking-[0.22em] uppercase text-[oklch(0.72_0.09_75)] mb-7"
               style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
             >
               We do not just find artists — we curate mastery.
