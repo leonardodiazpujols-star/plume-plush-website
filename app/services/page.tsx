@@ -244,7 +244,7 @@ export default function Services() {
               { step: "04", title: "Delivery", desc: "We ensure flawless execution on the day, leaving you free to enjoy the experience." },
             ].map((p, i) => (
               <div key={p.step} className="text-center fade-up" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="text-5xl text-[oklch(0.72_0.09_75)]/30 mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>{p.step}</div>
+                <div className="text-5xl text-[oklch(0.14_0.005_285)] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}>{p.step}</div>
                 <h3 className="text-xl text-[oklch(0.14_0.005_285)] mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}>{p.title}</h3>
                 <p className="text-[0.78rem] text-[oklch(0.4_0.01_285)] leading-relaxed" style={{ fontWeight: 300 }}>{p.desc}</p>
               </div>
